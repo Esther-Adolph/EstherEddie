@@ -12,6 +12,14 @@ a{
 text-decoration: none;
 }
 
+p{
+  margin: 0.7rem
+}
+
+.text-primary{
+color: rgb(0, 102, 255);
+}
+
 /* code for the navbar */
 #navbar{
   background: aqua;
@@ -57,8 +65,6 @@ color: #fff;
   height: 100%;
   padding: 0  2rem;
 
-
-
   /* overlay */
   position: absolute;
   top: 60px;
@@ -66,16 +72,21 @@ color: #fff;
   right: 0;
   bottom: 0;
   background-color:rgb(0, 0, 0, 0.5);
-
 }
 
 .l-leading{
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+
+.m-leading{
   font-size: 2rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
-
-
 }
+
 .lead{
   font-size: 1.3rem;
   margin-bottom: 2rem;
@@ -96,6 +107,17 @@ border-radius: 5px;
 }
 .btn:hover{
   background: aqua;
+}
+
+.btn-dark{
+  background: #000;
+  color: #fff;
+}
+.container{
+  max-width: 1100px;
+  margin: auto;
+  padding: 0.2rem;
+  overflow: hidden;
 }
 
 .items{
@@ -141,8 +163,12 @@ display: flex;
   background: #333;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .p-1{
-  padding: 1.5rem;
+  padding: 1.5rem 0;
 }
 
 .p-2{
@@ -151,12 +177,13 @@ display: flex;
 
 .p-3
 {
-  padding: 3rem;
+  padding: 3rem 0;
 }
 
 .list{
   margin: 00.5rem 0;
   list-style: none;
+  display: block;
 }
 .list li{
   padding: 0.5rem;
@@ -177,3 +204,31 @@ display: flex;
   width: 90px;
   height: 90px
 }
+
+
+/* section: contact */
+.bg-primary{
+ background: #fff; 
+ color: #000;
+}
+
+#contact{
+  /* display: flex; */
+  width: 80%;
+  margin: 0 auto;
+}
+
+#contact .contact-form .form-group{
+margin: 00.75rem;
+}
+
+#contact .contact-form label{
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea{
+  width: 100%;
+  padding: 0.5rem
+}
+

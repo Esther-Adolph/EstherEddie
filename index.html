@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 1100px)" href="./css/widescreen.css">
   <title>PMKreative</title>
 </head>
 <body>
  <nav id="navbar">
   <h1 class="logo"> 
-    <span>PM</span>Kreative
+    <span class="text-primary"> <i class="fa-brands fa-hire-a-helper"></i>PM</span>Kreative
   </h1>
   <ul>
     <li><a href="#home">home</a></li>
@@ -24,17 +26,17 @@
 <!--code for header tag -->
 <header id="showcase">
 <div class="showcase-content">
-  <h1 class="l-leading">helping people help themselves</h1>
+  <h1 class="l-leading">Helping People Help Themselves</h1>
   <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet optio magnam veniam cum illum iste, itaque quas dolores deserunt veritatis. Dolorem, provident beatae. Consectetur et reprehenderit adipisci odio fugit. Neque.</p>
-  <a href="#what" class="btn">Read More</a>
+  <a href="#what" class="btn">Read More</a> 
 </div>
 </header>
 
 <!-- what we do section -->
 <section id="what" class="bg-light py-1">
   <div class="container">
-    <h2>
-      <span>what</span> we do
+    <h2 class="m-heading text-center">
+      <span class="text-primary">What</span> We Do
     </h2>
     <div class="items">
       <div class="item">
@@ -70,13 +72,13 @@
 <section id="who">
   <div class="who-img"></div>
   <div class="who text bg-dark p-2">
-    <h2 class="m-heading"><span class="text-primary">Who</span>We Are</h2>
+    <h2 class="m-heading"><span class="text-primary">Who</span> We Are</h2>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, voluptates voluptatibus, quae asperiores ab facere blanditiis repellat, sequi est hic beatae quam! Ut corrupti iusto, repudiandae excepturi quam iure ullam!</p>
     
     <p> 
-      <h3>Our Team</h3>
-      <ul>
+      <h3><span class="text-primary">Our Team</h3>
+      <ul class="list">
         <li>Pascal Mawuli Kemetse: President</li>
         <li>Esther Edinam Adolph: Vice President</li>
         <li>Jasmine Patience Adolph: Research Manager</li>
@@ -87,12 +89,12 @@
       </ul>
     </p>
   </div>
-
 </section>
-<!-- projects -->
+
+<!-- clients -->
 <section id="clients" class="py-1">
   <div class="container">
-    <h2><span>Our </span>clients</h2>
+    <h2 class="m-heading text-center"><span class="text-primary">Our </span>clients</h2>
     <div class="items py-1">
       <div><img src="./img/LOGO/lambo.jpg" alt=""></div>
       <div><img src="./img/LOGO/NISSAN.jpg" alt=""></div>
@@ -101,6 +103,41 @@
       <div><img src="./img/LOGO/NISSAN2.jpg" alt=""></div>
     </div>
   </div>
+</section>
+
+
+<!-- contact section -->
+<section id="contact">
+  <div class="contact-form bg-primary p-2">
+    <h2 class="m-heading">contact Us</h2>
+    <p>Please use the form below to contact us</p>
+    <form action="">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="name" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone number</label>
+        <input type="text" class="form-control" id="Phone" placeholder="Enter your Phone number">
+      </div>
+
+      <div class="form-group">
+        <label for=""Message>Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+      </div>
+
+      <input type="submit" value="send" class="btn btn-dark">
+      </form>
+
+  </div>
+
 </section>
 </body>
 </html>
