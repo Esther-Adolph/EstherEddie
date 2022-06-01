@@ -218,6 +218,13 @@ display: flex;
   margin: 0 auto;
 }
 
+.m-heading{
+  text-align: center;
+}
+
+.contact-form p{
+  text-align: center;
+}
 #contact .contact-form .form-group{
 margin: 00.75rem;
 }
@@ -230,5 +237,22 @@ margin: 00.75rem;
 #contact .contact-form textarea{
   width: 100%;
   padding: 0.5rem
+}
+
+.p-center{
+  text-align: center;
+}
+
+footer{
+  background: #541690;
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  justify-content: center;
+}
+
+footer p{
+  text-align: center;
+  padding-top: 7px;
 }
 
